@@ -12,8 +12,6 @@ type Config struct {
 	Timeout      time.Duration
 }
 
-var defaultEndpoint = "www.medu-api.com"
-
 // NewConfig returns a pointer of Config
 // scheme only accepts http or https
 // endpoint is the host to access, the connection could not be created if it's error

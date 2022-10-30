@@ -1,10 +1,10 @@
 package sdk
 
 import (
-	"alchemypay/sdk/request"
-	"alchemypay/sdk/response"
 	"encoding/json"
 	"fmt"
+	"github.com/hedeqiang/alchemy/sdk/request"
+	"github.com/hedeqiang/alchemy/sdk/response"
 	"net/http"
 	"strings"
 )

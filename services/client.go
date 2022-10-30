@@ -1,6 +1,6 @@
 package services
 
-import "alchemypay/sdk"
+import "github.com/hedeqiang/alchemy/sdk"
 
 const (
 	defaultEndpoint = "127.0.0.1:9090"

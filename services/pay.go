@@ -1,9 +1,9 @@
 package services
 
 import (
-	"alchemypay/sdk/request"
-	"alchemypay/sdk/response"
 	"encoding/json"
+	"github.com/hedeqiang/alchemy/sdk/request"
+	"github.com/hedeqiang/alchemy/sdk/response"
 )
 
 type AlchemyRequest struct {

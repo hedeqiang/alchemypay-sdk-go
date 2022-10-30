@@ -1,9 +1,9 @@
 package response
 
 import (
-	"alchemypay/sdk/errors"
 	"encoding/json"
 	"fmt"
+	"github.com/hedeqiang/alchemy/sdk/errors"
 	"io"
 	"net/http"
 )
