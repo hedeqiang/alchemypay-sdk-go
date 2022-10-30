@@ -1,4 +1,4 @@
-module github.com/hedeqiang/alchemypay-sdk-go
+module github.com/hedeqiang/alchemypay
 
 go 1.19
 

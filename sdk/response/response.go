@@ -3,7 +3,7 @@ package response
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/hedeqiang/alchemypay-sdk-go/sdk/errors"
+	"github.com/hedeqiang/alchemypay/sdk/errors"
 	"io"
 	"net/http"
 )

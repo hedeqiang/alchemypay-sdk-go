@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"github.com/hedeqiang/alchemypay-sdk-go/sdk/request"
+	"github.com/hedeqiang/alchemypay/sdk/request"
 	urllib "net/url"
 	"reflect"
 	"regexp"

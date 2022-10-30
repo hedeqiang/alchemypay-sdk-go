@@ -3,8 +3,8 @@ package sdk
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/hedeqiang/alchemypay-sdk-go/sdk/request"
-	"github.com/hedeqiang/alchemypay-sdk-go/sdk/response"
+	"github.com/hedeqiang/alchemypay/sdk/request"
+	"github.com/hedeqiang/alchemypay/sdk/response"
 	"net/http"
 	"strings"
 )
