@@ -1,6 +1,6 @@
 package services
 
-import "github.com/hedeqiang/alchemy/sdk"
+import "github.com/hedeqiang/alchemypay-sdk-go/sdk"
 
 const (
 	defaultEndpoint = "127.0.0.1:9090"

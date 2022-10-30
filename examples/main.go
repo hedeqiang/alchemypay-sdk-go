@@ -2,8 +2,8 @@ package main
 
 import (
 	"fmt"
-	"github.com/hedeqiang/alchemy/sdk"
-	"github.com/hedeqiang/alchemy/services"
+	"github.com/hedeqiang/alchemypay-sdk-go/sdk"
+	"github.com/hedeqiang/alchemypay-sdk-go/services"
 )
 
 func main() {
