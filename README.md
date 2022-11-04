@@ -24,6 +24,8 @@ client, _ := services.NewClient(&config)
 
 # Usage
 
+> 任意接口不需要传递 `merchantCode`、`sign` 字段。此 `SDK` 已实现签名功能.
+
 ### 数字货币支持列表接口
 
 ```go
@@ -36,8 +38,6 @@ if err != nil {
     return
 }
 fmt.Printf("get response body: `%s`\n", resp.String())
-
-fmt.Printf("get response body: `%s`\n", resp.GetResponseBody())
 ```
 
 
@@ -47,13 +47,13 @@ fmt.Printf("get response body: `%s`\n", resp.GetResponseBody())
 ```go
 req := services.NewPayRequest()
 req.URL = "openApi/createOrder"
-req.Params = map[string]string{
-  "amount":           "10.0",
-  "fiatType":         "CNY",
-  "callbackUrl":      "http://147.243.170.11:9091/transnotify",
-  "merchantOrderNum": "testqwe1234567891035",
-  "payMent":          "w1",
-  "email":            "123456@qq.com",
+req.Params = map[string]interface{}{
+    "amount":           10.0,
+    "fiatType":         "CNY",
+    "callbackUrl":      "http://147.243.170.11:9091/transnotify",
+    "merchantOrderNum": "testqwe1234567891035",
+    "payMent":          "w1",
+    "email":            "123456@qq.com",
 }
 resp, err := client.Pay(req)
 if err != nil {

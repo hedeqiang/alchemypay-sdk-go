@@ -9,7 +9,7 @@ import (
 )
 
 // OrderParam order params
-func OrderParam(p map[string]string, bizKey string) (returnStr string) {
+func OrderParam(p map[string]interface{}, bizKey string) (returnStr string) {
 	keys := make([]string, 0, len(p))
 	for k := range p {
 		if k == "sign" {
@@ -28,7 +28,8 @@ func OrderParam(p map[string]string, bizKey string) (returnStr string) {
 		}
 		buf.WriteString(k)
 		buf.WriteByte('=')
-		buf.WriteString(p[k])
+
+		buf.WriteString(fmt.Sprint(p[k]))
 	}
 	buf.WriteString("&key=" + bizKey)
 	returnStr = buf.String()

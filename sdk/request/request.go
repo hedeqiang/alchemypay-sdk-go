@@ -5,8 +5,8 @@ type Request interface {
 	GetURL() string
 	GetAction() string
 	GetHeaders() map[string]string
-	GetParams() map[string]string
-	SetParams(key, value string)
+	GetParams() map[string]interface{}
+	SetParams(key string, value interface{})
 }
 
 // BaseRequest Request is the base struct of service requests

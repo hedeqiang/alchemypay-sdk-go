@@ -8,19 +8,19 @@ import (
 
 type AlchemyRequest struct {
 	*request.BaseRequest
-	Params map[string]string
+	Params map[string]interface{}
 }
 
-func (r *AlchemyRequest) GetParams() map[string]string {
+func (r *AlchemyRequest) GetParams() map[string]interface{} {
 	if r.Params == nil {
-		return make(map[string]string)
+		return make(map[string]interface{})
 	}
 	return r.Params
 }
 
-func (r *AlchemyRequest) SetParams(key, value string) {
+func (r *AlchemyRequest) SetParams(key string, value interface{}) {
 	if r.Params == nil {
-		r.Params = make(map[string]string)
+		r.Params = make(map[string]interface{})
 	}
 	r.Params[key] = value
 }
